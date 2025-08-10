@@ -1,19 +1,29 @@
-import { View,Text, Button } from "react-native";
+import { View, Text, Button } from "react-native";
 
 export default function ProfileScreen({ navigation }) {
-return(
-<View style={{flex:1, alignItems: "center", justifyContent: "center"}}>
-  <Text>ชุติกาญจน์ วุฒิไชย ทธด.102</Text>
-  <Text></Text>
-  <Button
-  title="Go to Details"
-  onPress={() => navigation.navigate("Details")}
-    />
-    <Text></Text>
-    <Button
-  title="Go to Home"
-  onPress={() => navigation.navigate("Home")}
-    />
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>ชุติกาญจน์ วุฒิไชย ทธด.102</Text>
+      <Text> </Text>
+      <Button
+        title="ไปที่หน้าหลัก"
+        onPress={() => navigation.navigate("ไปที่หน้าหลัก")}
+      />
+      <Text> </Text>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate("Details")}
+      />
+      <Text> </Text>
+      <Button
+        title="กดสั่ง"
+        onPress={() => navigation.navigate("Menu")}
+      />
+      <Text> </Text>
+      <Button
+        title="Go to Counter"
+        onPress={() => navigation.navigate("Counter")}
+      />
     </View>
   );
 }
